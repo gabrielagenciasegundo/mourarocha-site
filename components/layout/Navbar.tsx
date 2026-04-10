@@ -55,7 +55,7 @@ export default function Navbar() {
         {/* Center Nav (desktop) */}
         <nav className="hidden md:flex items-center gap-8">
           <Link
-            href="#sobre"
+            href="/sobre"
             className={cn(
               "text-sm font-medium tracking-wide transition-colors duration-200",
               isLightSection
@@ -66,7 +66,7 @@ export default function Navbar() {
             Quem Somos
           </Link>
           <Link
-            href="#areas"
+            href="/solucoes"
             className={cn(
               "text-sm font-medium tracking-wide transition-colors duration-200",
               isLightSection
@@ -74,10 +74,10 @@ export default function Navbar() {
                 : "text-white/75 hover:text-white"
             )}
           >
-            Áreas
+            Soluções
           </Link>
           <Link
-            href="#empresas"
+            href="/#empresas"
             className={cn(
               "text-sm font-medium tracking-wide transition-colors duration-200",
               isLightSection
@@ -88,7 +88,7 @@ export default function Navbar() {
             Clientes
           </Link>
           <Link
-            href="#equipe"
+            href="/blog"
             className={cn(
               "text-sm font-medium tracking-wide transition-colors duration-200",
               isLightSection
@@ -96,7 +96,7 @@ export default function Navbar() {
                 : "text-white/75 hover:text-white"
             )}
           >
-            Equipe
+            Blog
           </Link>
         </nav>
 
@@ -130,10 +130,10 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 py-6 px-6 flex flex-col gap-4 border-t border-white/10 bg-[#080c1c]/97 backdrop-blur-[20px]">
-          <Link href="#sobre" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Quem Somos</Link>
-          <Link href="#areas" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Áreas</Link>
-          <Link href="#empresas" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Clientes</Link>
-          <Link href="#equipe" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Equipe</Link>
+          <Link href="/sobre" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Quem Somos</Link>
+          <Link href="/solucoes" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Soluções</Link>
+          <Link href="/#empresas" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Clientes</Link>
+          <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Blog</Link>
           <Link
             href="#contato"
             onClick={() => setIsMobileMenuOpen(false)}

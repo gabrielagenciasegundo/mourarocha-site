@@ -58,11 +58,11 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold text-slate-900">Navegação</h4>
             <ul className="space-y-3">
-              <li><Link href="#sobre" className="text-slate-500 hover:text-primary transition-colors">Quem Somos</Link></li>
-              <li><Link href="#areas" className="text-slate-500 hover:text-[#243588] transition-colors">Áreas de Atuação</Link></li>
-              <li><Link href="#fazemos" className="text-slate-500 hover:text-[#243588] transition-colors">O que Fazemos</Link></li>
-              <li><Link href="#equipe" className="text-slate-500 hover:text-[#243588] transition-colors">Nossa Equipe</Link></li>
-              <li><Link href="#contato" className="text-slate-500 hover:text-[#243588] transition-colors">Contato</Link></li>
+              <li><Link href="/sobre" className="text-slate-500 hover:text-primary transition-colors">Quem Somos</Link></li>
+              <li><Link href="/solucoes" className="text-slate-500 hover:text-[#0e3187] transition-colors">Soluções</Link></li>
+              <li><Link href="/#fazemos" className="text-slate-500 hover:text-[#0e3187] transition-colors">O que Fazemos</Link></li>
+              <li><Link href="/blog" className="text-slate-500 hover:text-[#0e3187] transition-colors">Blog</Link></li>
+              <li><Link href="/#contato" className="text-slate-500 hover:text-[#0e3187] transition-colors">Contato</Link></li>
             </ul>
           </div>
 
@@ -70,11 +70,11 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold text-slate-900">Especialidades</h4>
             <ul className="space-y-3">
-              <li><Link href="#areas" className="text-slate-500 hover:text-[#243588] transition-colors">Propriedade Intelectual</Link></li>
-              <li><Link href="#areas" className="text-slate-500 hover:text-[#243588] transition-colors">Direito Digital</Link></li>
-              <li><Link href="#areas" className="text-slate-500 hover:text-[#243588] transition-colors">LGPD e Privacidade</Link></li>
-              <li><Link href="#areas" className="text-slate-500 hover:text-[#243588] transition-colors">Direito Societário</Link></li>
-              <li><Link href="#areas" className="text-slate-500 hover:text-[#243588] transition-colors">Franchising</Link></li>
+              <li><Link href="/solucoes/propriedade-intelectual-e-protecao-de-criacoes" className="text-slate-500 hover:text-[#0e3187] transition-colors">Propriedade Intelectual</Link></li>
+              <li><Link href="/solucoes/direito-civil-aplicado-ao-digital" className="text-slate-500 hover:text-[#0e3187] transition-colors">Direito Digital</Link></li>
+              <li><Link href="/solucoes/protecao-de-dados-ia-e-privacidade-lgpd" className="text-slate-500 hover:text-[#0e3187] transition-colors">LGPD e Privacidade</Link></li>
+              <li><Link href="/solucoes/direito-societario-para-startups" className="text-slate-500 hover:text-[#0e3187] transition-colors">Direito Societário</Link></li>
+              <li><Link href="/solucoes/franchising" className="text-slate-500 hover:text-[#0e3187] transition-colors">Franchising</Link></li>
             </ul>
           </div>
 
@@ -83,9 +83,9 @@ export default function Footer() {
             <h4 className="font-semibold text-slate-900">Fale Conosco</h4>
             <p className="text-slate-500 text-xs leading-relaxed">Pronto para proteger sua empresa e crescer com segurança jurídica?</p>
             <Link
-              href="#contato"
+              href="/#contato"
               className="inline-flex items-center gap-2 h-10 px-6 text-xs font-semibold text-white rounded-sm transition-all duration-300 hover:opacity-90"
-              style={{ backgroundColor: "#243588" }}
+              style={{ backgroundColor: "#0e3187" }}
             >
               Falar com a equipe
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
