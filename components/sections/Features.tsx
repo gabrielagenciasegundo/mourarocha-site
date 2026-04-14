@@ -26,7 +26,7 @@ const differentials = [
   {
     number: "02",
     title: "Profundo entendimento do mercado digital",
-    description: "Startups, agências, tech e IA exigem um jurídico diferente — e é exatamente o que fazemos.",
+    description: "Startups, agências, tech e IA exigem um jurídico diferente, e é exatamente o que fazemos.",
   },
   {
     number: "03",

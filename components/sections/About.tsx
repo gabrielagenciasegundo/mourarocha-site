@@ -77,7 +77,7 @@ export default function About() {
               A Moura Rocha nasceu para quebrar o padrão da advocacia tradicional. Somos um escritório que fala a sua língua, entende a realidade de quem vive no digital e entrega soluções que acompanham tecnologia, velocidade e inovação.
             </p>
             <p className="text-base text-slate-500 leading-relaxed">
-              Henrique e Pamella lideram o escritório com uma abordagem prática, transparente e altamente especializada em negócios de tecnologia, marketing e inovação. Nosso papel é traduzir a lei para o seu dia a dia — sem complicação e sem juridiquês.
+              Henrique e Pamella lideram o escritório com uma abordagem prática, transparente e altamente especializada em negócios de tecnologia, marketing e inovação. Nosso papel é traduzir a lei para o seu dia a dia, sem complicação e sem juridiquês.
             </p>
 
             <ul className="space-y-3 pt-2">
