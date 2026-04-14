@@ -60,7 +60,7 @@ export default function Technology() {
             </h2>
           </div>
           <div className="col-span-1 lg:col-span-5 lg:pt-12">
-            <p className="text-lg text-slate-600 leading-relaxed font-light max-w-lg">
+            <p className="text-lg text-slate-600 leading-relaxed font-light">
               Atuamos com empresas que vivem na velocidade do digital. Entendemos o que você faz e sabemos exatamente como proteger.
             </p>
           </div>

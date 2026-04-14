@@ -5,6 +5,8 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
+const MotionLink = motion(Link);
+
 const areas = [
   {
     icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
@@ -72,51 +74,51 @@ export default function Services() {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-200/80">
           {areas.map((area, i) => (
-            <Link key={i} href="#contato" passHref legacyBehavior>
-              <motion.a
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.6, delay: i * 0.06 }}
-                className={cn(
-                  "group relative overflow-hidden bg-white cursor-pointer block p-8 md:p-10 space-y-5",
-                  "hover:bg-[#243588] transition-colors duration-500",
-                  area.featured ? "sm:col-span-2 lg:col-span-1" : ""
-                )}
+            <MotionLink
+              key={i}
+              href="#contato"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: i * 0.06 }}
+              className={cn(
+                "group relative overflow-hidden bg-white cursor-pointer block p-8 md:p-10 space-y-5",
+                "hover:bg-[#243588] transition-colors duration-500",
+                area.featured ? "sm:col-span-2 lg:col-span-1" : ""
+              )}
+            >
+              {/* Icon */}
+              <div
+                className="flex items-center justify-center w-14 h-14 rounded-xl transition-colors duration-500 group-hover:bg-white/10"
+                style={{ backgroundColor: "rgba(36,53,136,0.08)" }}
               >
-                {/* Icon */}
                 <div
-                  className="flex items-center justify-center w-14 h-14 rounded-xl transition-colors duration-500 group-hover:bg-white/10"
-                  style={{ backgroundColor: "rgba(36,53,136,0.08)" }}
-                >
-                  <div
-                    className="text-[#243588] group-hover:text-white transition-colors duration-500"
-                    dangerouslySetInnerHTML={{ __html: area.icon }}
-                  />
-                </div>
+                  className="text-[#243588] group-hover:text-white transition-colors duration-500"
+                  dangerouslySetInnerHTML={{ __html: area.icon }}
+                />
+              </div>
 
-                {/* Title */}
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-white leading-tight transition-colors duration-500">
-                  {area.title}
-                </h3>
+              {/* Title */}
+              <h3 className="text-lg font-bold text-slate-900 group-hover:text-white leading-tight transition-colors duration-500">
+                {area.title}
+              </h3>
 
-                {/* Description */}
-                <p className="text-sm text-slate-500 group-hover:text-white/80 leading-relaxed transition-colors duration-500">
-                  {area.description}
-                </p>
+              {/* Description */}
+              <p className="text-sm text-slate-500 group-hover:text-white/80 leading-relaxed transition-colors duration-500">
+                {area.description}
+              </p>
 
-                {/* Arrow */}
-                <div
-                  className="flex items-center gap-2 text-sm font-semibold transition-all duration-300 group-hover:gap-3"
-                  style={{ color: "#243588" }}
-                >
-                  <span className="group-hover:text-white transition-colors duration-500">
-                    Saiba mais
-                  </span>
-                  <ArrowRight className="h-4 w-4 group-hover:text-white transition-colors duration-500" strokeWidth={2.5} />
-                </div>
-              </motion.a>
-            </Link>
+              {/* Arrow */}
+              <div
+                className="flex items-center gap-2 text-sm font-semibold transition-all duration-300 group-hover:gap-3"
+                style={{ color: "#243588" }}
+              >
+                <span className="group-hover:text-white transition-colors duration-500">
+                  Saiba mais
+                </span>
+                <ArrowRight className="h-4 w-4 group-hover:text-white transition-colors duration-500" strokeWidth={2.5} />
+              </div>
+            </MotionLink>
           ))}
         </div>
       </div>
