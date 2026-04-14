@@ -55,7 +55,7 @@ export default function Services() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
               // NOSSA EXPERTISE
             </p>
-            <h2 className="text-[clamp(2.5rem,5vw,4.5rem)] font-extralight text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-[clamp(2.5rem,5vw,4.5rem)] font-extralight text-slate-900 leading-none tracking-tight">
               Áreas de atuação
               <strong className="font-bold block" style={{ color: "#243588" }}>
                 pensadas para o digital.

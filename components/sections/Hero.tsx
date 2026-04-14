@@ -91,7 +91,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Main headline */}
-        <h1 className="text-[clamp(2.8rem,7vw,6.5rem)] font-bold tracking-tight leading-[1.05] text-white">
+        <h1 className="text-[clamp(2.8rem,7vw,5.5rem)] font-bold tracking-tight leading-none text-white">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
