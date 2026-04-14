@@ -75,11 +75,11 @@ export default function Features() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
             // O QUE FAZEMOS
           </p>
-          <h2 className="text-[clamp(2.5rem,5vw,4.5rem)] font-extralight leading-[1.1] tracking-tight text-white">
+          <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold tracking-tighter leading-[1.05] text-white">
             O jurídico que acompanha
             <strong className="font-bold block">seu ritmo de inovação.</strong>
           </h2>
-          <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
+          <p className="text-white/70 text-lg leading-relaxed font-light max-w-lg">
             Empresas digitais crescem rápido e precisam de um jurídico que não atrase suas decisões. Aqui, você recebe orientação prática, direta e alinhada ao que seu modelo de negócio realmente precisa para crescer com segurança.
           </p>
         </motion.div>

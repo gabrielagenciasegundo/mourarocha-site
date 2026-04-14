@@ -38,14 +38,14 @@ export default function Team() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
               // NOSSA EQUIPE
             </p>
-            <h2 className="text-[clamp(2.4rem,5vw,4.5rem)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold tracking-tighter leading-[1.05] text-slate-900">
               Profissionais que unem
               <span className="text-[#243588] block md:inline md:ml-2">experiência, inovação</span>
               e propósito.
             </h2>
           </div>
           <div className="lg:pb-2">
-            <p className="text-lg text-slate-600 leading-relaxed md:pl-2">
+            <p className="text-lg leading-relaxed font-light max-w-lg text-slate-600 md:pl-2">
               A Moura Rocha é formada por uma equipe multidisciplinar que alia conhecimento jurídico, visão estratégica e domínio tecnológico. Nosso compromisso é transformar o direito em uma ferramenta de crescimento e proteção para empresas e empreendedores.
             </p>
           </div>

@@ -55,7 +55,7 @@ export default function Services() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
               // NOSSA EXPERTISE
             </p>
-            <h2 className="text-[clamp(2.5rem,5vw,4.5rem)] font-extralight text-slate-900 leading-none tracking-tight">
+            <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold tracking-tighter leading-[1.05] text-slate-900">
               Áreas de atuação
               <strong className="font-bold block" style={{ color: "#243588" }}>
                 pensadas para o digital.
@@ -63,7 +63,7 @@ export default function Services() {
             </h2>
           </div>
           <div className="lg:pb-3 lg:pl-8">
-            <p className="text-base text-slate-500 leading-relaxed max-w-md">
+            <p className="text-lg leading-relaxed font-light max-w-lg text-slate-500">
               Protegemos o que você cria, constrói e escala. Soluções jurídicas modernas e especializadas para o mercado de tecnologia e inovação.
             </p>
           </div>

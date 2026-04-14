@@ -65,7 +65,7 @@ export default function About() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
               // QUEM SOMOS
             </p>
-            <h2 className="text-[clamp(2.4rem,5vw,4.5rem)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold tracking-tighter leading-[1.05] text-slate-900">
               Uma advocacia
               <span className="block" style={{ color: "#243588" }}>
                 moderna para
@@ -73,7 +73,7 @@ export default function About() {
               empresas modernas.
             </h2>
 
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-lg leading-relaxed font-light max-w-lg text-slate-600">
               A Moura Rocha nasceu para quebrar o padrão da advocacia tradicional. Somos um escritório que fala a sua língua, entende a realidade de quem vive no digital e entrega soluções que acompanham tecnologia, velocidade e inovação.
             </p>
             <p className="text-base text-slate-500 leading-relaxed">

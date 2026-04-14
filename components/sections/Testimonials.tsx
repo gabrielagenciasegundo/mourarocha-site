@@ -24,11 +24,11 @@ export default function Testimonials() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
             // DEPOIMENTOS
           </p>
-          <h2 className="text-[clamp(2.2rem,4.5vw,4rem)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+          <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold tracking-tighter leading-[1.05] text-slate-900">
             O que nossos clientes
             <span style={{ color: "#243588" }}> têm a dizer.</span>
           </h2>
-          <p className="text-slate-500 leading-relaxed">
+          <p className="text-lg leading-relaxed font-light max-w-lg text-slate-500 mx-auto">
             Empresas que cresceram com segurança jurídica ao lado da Moura Rocha.
           </p>
         </motion.div>
