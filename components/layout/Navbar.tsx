@@ -48,7 +48,14 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <span className="text-white text-2xl font-black tracking-tighter leading-none">
-            <Image src='/images/Logo MR_Prancheta 1-03.png' alt="Logo MouraRocha" width={160} height={60} priority className="w-auto h-[60px]" />
+            <Image 
+              src={isLightSection ? '/images/Logo MR_Prancheta 1-03.png' : '/images/Logo MR_Prancheta 1-04.png'} 
+              alt="Logo MouraRocha" 
+              width={160} 
+              height={60} 
+              priority 
+              className="w-auto h-[60px]" 
+            />
           </span>
         </Link>
 
