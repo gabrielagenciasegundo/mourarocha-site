@@ -9,16 +9,10 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden text-center"
-
+      className="relative bg-[#0e3187] flex min-h-[100svh] flex-col items-center justify-center overflow-hidden text-center pt-20"
     >
-      <Image
-        src="/img171.jpg"
-        alt="Background do hero"
-        fill
-        priority
-        className="object-cover z-[-1]"
-      />
+      {/* Decorative background element - matching Testimonials */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#0d3faf]/20 -skew-x-12 transform translate-x-1/4" />
       {/* Subtle grid overlay */}
       {/* <div
         className="absolute inset-0  opacity-[0.06]"
@@ -131,7 +125,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.55 }}
-          className="mx-auto max-w-xl text-base text-white/70 sm:text-lg leading-relaxed"
+          className="mx-auto max-w-xl text-md text-lg leading-tight md:leading-relaxed font-light text-white/70"
         >
           A Moura Rocha é o escritório especializado em negócios de tecnologia, startups, agências de marketing e empresas que usam IA.
         </motion.p>

@@ -19,7 +19,7 @@ export default function Contact() {
             <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold tracking-tighter leading-[1.05]">
               Pronto para conversar?
             </h2>
-            <p className="text-lg leading-relaxed font-light max-w-lg text-slate-300">
+            <p className="text-md text-lg leading-tight md:leading-relaxed font-light max-w-lg text-slate-300">
               Conte-nos sobre o seu desafio. Nossa equipe técnica entrará em contato para mapear a melhor solução para sua operação.
             </p>
           </motion.div>

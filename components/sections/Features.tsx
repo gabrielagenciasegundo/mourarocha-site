@@ -79,7 +79,7 @@ export default function Features() {
             O jurídico que acompanha
             <strong className="font-bold block">seu ritmo de inovação.</strong>
           </h2>
-          <p className="text-white/70 text-lg leading-relaxed font-light max-w-lg">
+          <p className="text-md text-lg leading-tight md:leading-relaxed font-light max-w-lg text-white/70">
             Empresas digitais crescem rápido e precisam de um jurídico que não atrase suas decisões. Aqui, você recebe orientação prática, direta e alinhada ao que seu modelo de negócio realmente precisa para crescer com segurança.
           </p>
         </motion.div>

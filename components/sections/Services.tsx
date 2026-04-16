@@ -65,7 +65,7 @@ export default function Services() {
             </h2>
           </div>
           <div className="lg:pb-3 lg:pl-8">
-            <p className="text-lg leading-relaxed font-light max-w-lg text-slate-500">
+            <p className="text-md text-lg leading-tight md:leading-relaxed font-light max-w-lg text-slate-500">
               Protegemos o que você cria, constrói e escala. Soluções jurídicas modernas e especializadas para o mercado de tecnologia e inovação.
             </p>
           </div>

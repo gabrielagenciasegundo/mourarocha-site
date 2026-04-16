@@ -45,7 +45,7 @@ export default function Team() {
             </h2>
           </div>
           <div className="lg:pb-2">
-            <p className="text-lg leading-relaxed font-light max-w-lg text-slate-600 md:pl-2">
+            <p className="text-md text-lg leading-tight md:leading-relaxed font-light max-w-lg text-slate-600 md:pl-2">
               A Moura Rocha é formada por uma equipe multidisciplinar que alia conhecimento jurídico, visão estratégica e domínio tecnológico. Nosso compromisso é transformar o direito em uma ferramenta de crescimento e proteção para empresas e empreendedores.
             </p>
           </div>
