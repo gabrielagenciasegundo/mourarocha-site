@@ -115,12 +115,12 @@ export default function SobreContent() {
                   move o seu negócio.
                 </span>
               </h2>
-              <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-md text-lg leading-tight md:leading-relaxed font-light text-muted-foreground">
                 Formada por uma equipe multidisciplinar, a Moura Rocha iniciou suas
                 atividades em 2007 e, desde então, evoluiu para entregar uma assessoria
                 sólida e fundamentada, guiada por ética, legalidade e cooperação.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-md text-lg leading-tight md:leading-relaxed font-light text-muted-foreground">
                 Nossos departamentos atuam de forma integrada para oferecer soluções
                 completas — do estratégico ao operacional — com agilidade, segurança e
                 clareza para empresas em diferentes fases de crescimento.
@@ -191,7 +191,7 @@ export default function SobreContent() {
                 Existimos para{" "}
                 <span className="font-semibold">causar impacto real.</span>
               </h2>
-              <p className="text-lg lg:text-xl text-white/60 leading-relaxed max-w-sm mt-2">
+              <p className="text-md text-lg leading-tight md:leading-relaxed font-light text-white/60 max-w-sm mt-2">
                 No mercado, nos negócios, nas carreiras. Combinando estratégia jurídica,
                 processos modernos e criatividade como linguagem comum.
               </p>
@@ -250,7 +250,7 @@ export default function SobreContent() {
               </h2>
             </div>
             <div>
-              <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-md text-lg leading-tight md:leading-relaxed font-light text-muted-foreground">
                 A Moura Rocha é formada por uma equipe multidisciplinar que alia
                 conhecimento jurídico, visão estratégica e domínio tecnológico.
               </p>

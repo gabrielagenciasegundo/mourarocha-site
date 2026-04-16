@@ -28,7 +28,7 @@ export default function SolucoesArchiveContent() {
             </h2>
           </div>
           <div>
-            <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+            <p className="text-md text-lg leading-tight md:leading-relaxed font-light text-muted-foreground">
               Cada especialidade foi desenhada para empresas de tecnologia, startups e negócios
               digitais. Escolha a área que melhor representa o seu desafio e entenda como podemos ajudar.
             </p>

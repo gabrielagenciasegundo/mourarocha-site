@@ -72,7 +72,7 @@ export default function ContactCTA({
             className="flex flex-col gap-6"
           >
             <p
-              className={`text-lg lg:text-xl leading-relaxed ${
+              className={`text-md text-lg leading-tight md:leading-relaxed font-light ${
                 dark ? "text-white/60" : "text-slate-500"
               }`}
             >
