@@ -17,7 +17,7 @@ export default function SobrePage() {
       <Navbar />
       <main>
         <PageHero
-          eyebrow="// QUEM SOMOS"
+          eyebrow=""
           titleLight="Prezamos pela assertividade"
           titleBold="em todas as resoluções."
           subtitle="Formados por uma equipe multidisciplinar, somos o escritório jurídico especializado em negócios que criam, inovam e crescem no digital."

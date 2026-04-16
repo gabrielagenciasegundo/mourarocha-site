@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -135,21 +136,39 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 py-6 px-6 flex flex-col gap-4 border-t border-white/10 bg-[#080c1c]/97 backdrop-blur-[20px]">
-          <Link href="/sobre" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Quem Somos</Link>
-          <Link href="/solucoes" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Soluções</Link>
-          <Link href="/#empresas" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Clientes</Link>
-          <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium py-2 transition-colors">Blog</Link>
-          <Link
-            href="#contato"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="mt-2 flex items-center justify-center h-11 px-5 text-sm font-medium border border-white/80 text-white hover:bg-white hover:text-slate-900 transition-all duration-300 rounded-sm"
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div 
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className={cn(
+              "md:hidden absolute top-full left-0 right-0 py-6 px-6 flex flex-col gap-4 border-t overflow-hidden",
+              isLightSection 
+                ? "bg-white/95 backdrop-blur-[20px] border-slate-200" 
+                : "bg-[#080c1c]/95 backdrop-blur-[20px] border-white/10"
+            )}
           >
-            Falar com a MouraRocha
-          </Link>
-        </div>
-      )}
+            <Link href="/sobre" onClick={() => setIsMobileMenuOpen(false)} className={cn("text-base font-medium py-2 transition-colors", isLightSection ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white")}>Quem Somos</Link>
+            <Link href="/solucoes" onClick={() => setIsMobileMenuOpen(false)} className={cn("text-base font-medium py-2 transition-colors", isLightSection ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white")}>Soluções</Link>
+            <Link href="/#empresas" onClick={() => setIsMobileMenuOpen(false)} className={cn("text-base font-medium py-2 transition-colors", isLightSection ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white")}>Clientes</Link>
+            <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className={cn("text-base font-medium py-2 transition-colors", isLightSection ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white")}>Blog</Link>
+            <Link
+              href="#contato"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={cn(
+                "mt-2 flex items-center justify-center h-11 px-5 text-sm font-medium border transition-all duration-300 rounded-sm",
+                isLightSection
+                  ? "border-primary/50 text-primary hover:bg-primary hover:text-white"
+                  : "border-white/80 text-white hover:bg-white hover:text-slate-900"
+              )}
+            >
+              Falar com a MouraRocha
+            </Link>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

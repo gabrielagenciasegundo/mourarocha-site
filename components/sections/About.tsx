@@ -44,7 +44,7 @@ export default function About() {
                 alt="Robô Moura Rocha"
                 width={400}
                 height={480}
-                className="relative z-10 w-full max-h-[480px] object-contain drop-shadow-2xl"
+                className="relative z-10 w-1/4 md:w-full max-h-[480px] object-contain drop-shadow-2xl"
               />
             </div>
             {/* Floating badge */}
@@ -73,7 +73,7 @@ export default function About() {
               empresas modernas.
             </h2>
 
-            <p className="text-lg leading-relaxed font-light max-w-lg text-slate-600">
+            <p className="text-md text-lg leading-tight md:leading-relaxed font-light max-w-lg text-slate-600">
               A Moura Rocha nasceu para quebrar o padrão da advocacia tradicional. Somos um escritório que fala a sua língua, entende a realidade de quem vive no digital e entrega soluções que acompanham tecnologia, velocidade e inovação.
             </p>
             <p className="text-lg leading-relaxed font-light max-w-lg text-slate-600">
