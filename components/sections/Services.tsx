@@ -1,43 +1,52 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import * as motion from "motion/react-client"
+import { ArrowRight, ShieldCheck, MonitorSmartphone, Lock, Building2, Store, Users } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-
-const MotionLink = motion(Link);
+import Image from "next/image";
 
 const areas = [
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+    icon: ShieldCheck,
     title: "Propriedade Intelectual e Proteção de Criações",
     description: "Registramos marcas, softwares, metodologias, campanhas, conteúdos e tudo que sustenta sua operação. Se é seu, precisa ser blindado.",
     featured: true,
+    link: "/solucoes/propriedade-intelectual-e-protecao-de-criacoes",
+    image: "/images/solucoes/propriedade-intelectual.webp"
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>`,
+    icon: MonitorSmartphone,
     title: "Direito Empresarial Aplicado ao Digital",
     description: "Imagem, voz, conteúdo, campanhas, entregáveis e direitos de uso. Ajudamos empresas a evitar conflitos e proteger sua reputação no ambiente digital.",
+    link: "/solucoes/direito-civil-aplicado-ao-digital",
+    image: "/images/solucoes/direito-digital.webp"
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>`,
+    icon: Lock,
     title: "Proteção de Dados, IA e Privacidade (LGPD)",
     description: "Orientamos empresas que utilizam inteligência artificial ou dados sensíveis. Do consentimento ao uso correto de ferramentas de IA, garantimos segurança digital.",
+    link: "/solucoes/protecao-de-dados-ia-e-privacidade-lgpd",
+    image: "/images/solucoes/protecao-dados.webp"
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>`,
-    title: "Direito Societário para Startups",
+    icon: Building2,
+    title: "Direito Societário",
     description: "Acordo de sócios, captable, entrada/saída de founders, expansão, seed, Série A, reorganização societária. Estruturas que acompanham a velocidade da sua empresa.",
+    link: "/solucoes/direito-societario-para-startups",
+    image: "/images/solucoes/direito-societario.webp"
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>`,
+    icon: Store,
     title: "Franchising",
     description: "Suporte jurídico completo para redes de franquias da formatação à expansão. Contratos, compliance e proteção da marca em novos mercados.",
+    link: "/solucoes/franchising",
+    image: "/images/solucoes/franchising.webp"
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>`,
+    icon: Users,
     title: "Direito Trabalhista para Times Híbridos e Tech",
     description: "Modelos mistos entre CLT, PJ, freelancers e creators são comuns no digital. Organizamos tudo para evitar riscos trabalhistas que possam travar seu crescimento.",
+    link: "/solucoes/direito-trabalhista-para-times-hibridos-e-tech",
+    image: "/images/solucoes/direito-trabalhista.webp"
   },
 ];
 
@@ -73,55 +82,70 @@ export default function Services() {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-200/80">
-          {areas.map((area, i) => (
-            <MotionLink
-              key={i}
-              href="#contato"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: i * 0.06 }}
-              className={cn(
-                "group relative overflow-hidden bg-white cursor-pointer block p-8 md:p-10 space-y-5",
-                "hover:bg-[#243588] transition-colors duration-500",
-                area.featured ? "sm:col-span-2 lg:col-span-1" : ""
-              )}
-            >
-              {/* Icon */}
-              <div
-                className="flex items-center justify-center w-14 h-14 rounded-xl transition-colors duration-500 group-hover:bg-white/10"
-                style={{ backgroundColor: "rgba(36,53,136,0.08)" }}
+          {areas.map((area, i) => {
+            const Icon = area.icon;
+            
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: i * 0.06 }}
+                className={cn(
+                  "group relative overflow-hidden bg-white cursor-pointer block",
+                  area.featured ? "sm:col-span-2 lg:col-span-1" : ""
+                )}
               >
-                <div
-                  className="text-[#243588] group-hover:text-white transition-colors duration-500"
-                  dangerouslySetInnerHTML={{ __html: area.icon }}
-                />
-              </div>
+                <Link href={area.link || "#contato"} className="block h-full p-8 md:p-10">
+                  {/* Background Image (Hover) */}
+                  <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                    <Image 
+                      src={area.image} 
+                      alt={area.title} 
+                      fill 
+                      className="object-cover" 
+                    />
+                    {/* Overlay para garantir a leitura do texto */}
+                    <div className="absolute inset-0 bg-[#0c4ad1]/80 mix-blend-multiply" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0e3187] to-[#0e3187]/60 opacity-95" />
+                  </div>
 
-              {/* Title */}
-              <h3 className="text-lg font-bold text-slate-900 group-hover:text-white leading-tight transition-colors duration-500">
-                {area.title}
-              </h3>
+                  {/* Content */}
+                  <div className="relative z-10 space-y-5 h-full flex flex-col">
+                    {/* Icon */}
+                    <div
+                      className="flex items-center justify-center w-14 h-14 rounded-xl transition-all duration-500 group-hover:bg-white/15 group-hover:backdrop-blur-md"
+                      style={{ backgroundColor: "rgba(36,53,136,0.08)" }}
+                    >
+                      <Icon className="w-7 h-7 text-[#243588] group-hover:text-white transition-colors duration-500" strokeWidth={1.5} />
+                    </div>
 
-              {/* Description */}
-              <p className="text-sm text-slate-500 group-hover:text-white/80 leading-relaxed transition-colors duration-500">
-                {area.description}
-              </p>
+                    {/* Title */}
+                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-white leading-tight transition-colors duration-500">
+                      {area.title}
+                    </h3>
 
-              {/* Arrow */}
-              <div
-                className="flex items-center gap-2 text-sm font-semibold transition-all duration-300 group-hover:gap-3"
-                style={{ color: "#243588" }}
-              >
-                <span className="group-hover:text-white transition-colors duration-500">
-                  Saiba mais
-                </span>
-                <ArrowRight className="h-4 w-4 group-hover:text-white transition-colors duration-500" strokeWidth={2.5} />
-              </div>
-            </MotionLink>
-          ))}
-        </div>
-      </div>
-    </section>
+                    {/* Description */}
+                    <p className="text-sm text-slate-500 group-hover:text-white/90 leading-relaxed transition-colors duration-500 flex-grow">
+                      {area.description}
+                    </p>
+
+                    {/* Arrow */}
+                    <div
+                      className="flex items-center gap-2 text-sm font-semibold transition-all duration-300 group-hover:gap-3 group-hover:text-white pt-2"
+                      style={{ color: "#243588" }}
+                    >
+                      <span className="group-hover:text-white">Saiba mais</span>
+                      <ArrowRight className="h-4 w-4 group-hover:text-white" strokeWidth={2.5} />
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            );
+          })}
+        </div> 
+      </div >
+    </section >
   );
 }

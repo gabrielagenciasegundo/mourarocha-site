@@ -75,6 +75,7 @@ export default function Footer() {
               <li><Link href="/solucoes/protecao-de-dados-ia-e-privacidade-lgpd" className="text-slate-500 hover:text-[#0e3187] transition-colors">LGPD e Privacidade</Link></li>
               <li><Link href="/solucoes/direito-societario-para-startups" className="text-slate-500 hover:text-[#0e3187] transition-colors">Direito Societário</Link></li>
               <li><Link href="/solucoes/franchising" className="text-slate-500 hover:text-[#0e3187] transition-colors">Franchising</Link></li>
+              <li><Link href="/solucoes/direito-trabalhista-para-times-hibridos-e-tech" className="text-slate-500 hover:text-[#0e3187] transition-colors">Direito Trabalhista</Link></li>
             </ul>
           </div>
 
@@ -96,9 +97,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-400 text-xs">
-          <p>© {new Date().getFullYear()} Moura Rocha Advocacia. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Moura Rocha Advogados. Todos os direitos reservados.</p>
           <div className="flex items-center gap-6">
-            <Link href="#" className="hover:text-[#243588] transition-colors">Política de Privacidade</Link>
+            <Link href="/politica-de-privacidade" className="hover:text-[#243588] transition-colors">Política de Privacidade</Link>
             <Link href="#" className="hover:text-[#243588] transition-colors">Termos de Serviço</Link>
           </div>
         </div>

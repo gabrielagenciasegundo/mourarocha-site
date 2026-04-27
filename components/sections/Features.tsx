@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import ContactForm from "../ui/ContactForm";
 
 const scrollingItems = [
   "Uso de IA e Governança",
@@ -65,25 +66,35 @@ export default function Features() {
 
       <div className="mx-auto max-w-[1400px] relative z-10 space-y-20">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7 }}
-          className="max-w-3xl space-y-4"
-        >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
+        <div className="flex flex-col md:flex-row gap-8 justify-between ">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7 }}
+            className="max-w-3xl space-y-4"
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
             // O QUE FAZEMOS
-          </p>
-          <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold tracking-tighter leading-[1.05] text-white">
-            O jurídico que acompanha
-            <strong className="font-bold block">seu ritmo de inovação.</strong>
-          </h2>
-          <p className="text-md text-lg leading-tight md:leading-relaxed font-light max-w-lg text-white/70">
-            Empresas digitais crescem rápido e precisam de um jurídico que não atrase suas decisões. Aqui, você recebe orientação prática, direta e alinhada ao que seu modelo de negócio realmente precisa para crescer com segurança.
-          </p>
-        </motion.div>
-
+            </p>
+            <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold tracking-tighter leading-[1.05] text-white">
+              O jurídico que acompanha
+              <strong className="font-bold block">seu ritmo de inovação.</strong>
+            </h2>
+            <p className="text-md text-lg leading-tight md:leading-relaxed font-light max-w-lg text-white/70">
+              Empresas digitais crescem rápido e precisam de um jurídico que não atrase suas decisões. Aqui, você recebe orientação prática, direta e alinhada ao que seu modelo de negócio realmente precisa para crescer com segurança.
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="hidden md:block bg-white/5 p-8 rounded-2xl border border-white/10 shadow-xl backdrop-blur-sm lg:w-[500px]"
+          >
+            <ContactForm rows={2} />
+          </motion.div>
+        </div>
         {/* Scrolling ticker */}
         <div className="overflow-hidden border-y border-white/15 py-5 -mx-6 group">
           <motion.div

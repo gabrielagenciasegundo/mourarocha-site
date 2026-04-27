@@ -36,7 +36,7 @@ export const solucoes: Solucao[] = [
       "Atuamos na estruturação e expansão de franquias, garantindo segurança jurídica em todas as etapas do seu modelo de negócio.",
       "Da formatação jurídica à elaboração de contratos e compliance, asseguramos crescimento organizado — protegendo tanto o franqueador quanto a rede.",
     ],
-    coverImage: "https://segundodesign.com/mrocha/wp-content/uploads/2026/03/Franchisign1-768x432.webp",
+    coverImage: "/images/solucoes/franchising.webp",
     pilares: [
       {
         title: "Estruturação Jurídica",
@@ -79,7 +79,7 @@ export const solucoes: Solucao[] = [
       "Imagem, voz, conteúdo, campanhas, entregáveis e direitos de uso. O ambiente digital criou novos ativos — e novos riscos que poucas empresas estão preparadas para enfrentar.",
       "Ajudamos empresas, agências e criadores a estruturar relações contratuais sólidas, proteger reputação e evitar conflitos que podem comprometer campanhas, parcerias e crescimento.",
     ],
-    coverImage: "https://segundodesign.com/mrocha/wp-content/uploads/2025/12/direitoempresarial-768x432.webp",
+    coverImage: "/images/solucoes/direito-digital.webp",
     pilares: [
       {
         title: "Contratos Digitais",
@@ -122,7 +122,7 @@ export const solucoes: Solucao[] = [
       "O uso de dados e ferramentas de inteligência artificial cresce todos os dias — e com ele, a responsabilidade da sua empresa perante a lei e seus clientes.",
       "Orientamos negócios digitais a usar dados e IA com segurança: desde o consentimento e políticas internas até o uso correto de ferramentas que processam informações sensíveis. Uma abordagem prática, moderna e alinhada ao que o mercado exige.",
     ],
-    coverImage: "https://segundodesign.com/mrocha/wp-content/uploads/2025/12/protecaodedados_cut-768x432.webp",
+    coverImage: "/images/solucoes/protecao-dados.webp",
     pilares: [
       {
         title: "Conformidade com a LGPD",
@@ -165,7 +165,7 @@ export const solucoes: Solucao[] = [
       "Acordo de sócios, captable, entrada e saída de founders, expansão, seed, série A, reorganização societária — a estrutura jurídica da sua empresa precisa acompanhar seu crescimento.",
       "Criamos estruturas societárias sólidas e flexíveis para startups e empresas em crescimento, protegendo sócios e garantindo segurança em cada fase da jornada.",
     ],
-    coverImage: "https://segundodesign.com/mrocha/wp-content/uploads/2025/12/direitosocietariogeral-768x432.webp",
+    coverImage: "/images/solucoes/direito-societario.webp",
     pilares: [
       {
         title: "Estruturação Societária",
@@ -208,7 +208,7 @@ export const solucoes: Solucao[] = [
       "A nova economia exige modelos de trabalho que combinam CLT, PJ, freelancers, squads, creators e times terceirizados. Isso é normal no digital — mas também é um campo cheio de riscos jurídicos quando não estruturado corretamente.",
       "Organizamos toda a sua estrutura de pessoas para evitar passivos trabalhistas, conflitos e falhas contratuais que podem travar o crescimento da empresa.",
     ],
-    coverImage: "https://segundodesign.com/mrocha/wp-content/uploads/2025/12/diretotrabalhistaparatimes_cut-768x432.webp",
+    coverImage: "/images/solucoes/direito-trabalhista.webp",
     pilares: [
       {
         title: "Governança Trabalhista",
@@ -251,7 +251,7 @@ export const solucoes: Solucao[] = [
       "A inovação é o ativo mais valioso de qualquer empresa digital — e, sem proteção, é também o mais vulnerável. Marca, identidade visual, software, algoritmos, metodologias, campanhas e conteúdos: tudo que gera valor precisa ser oficialmente seu.",
       "Estruturamos a proteção de forma estratégica, garantindo que sua empresa possa crescer, captar investimento, licenciar e escalar sem o risco de ter suas ideias copiadas.",
     ],
-    coverImage: "https://segundodesign.com/mrocha/wp-content/uploads/2025/12/propriedadeintelectualparaeprotecao_cut-768x432.webp",
+    coverImage: "/images/solucoes/propriedade-intelectual.webp",
     pilares: [
       {
         title: "Registro e Proteção",

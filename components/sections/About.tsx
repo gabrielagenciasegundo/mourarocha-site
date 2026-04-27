@@ -1,8 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import * as motion from "motion/react-client"
 import { Check, ArrowRight } from "lucide-react";
 
 
@@ -14,8 +12,8 @@ const bullets = [
 
 const stats = [
   { value: "100+", label: "Clientes atendidos" },
-  { value: "10+", label: "Anos de atuação" },
-  { value: "6", label: "Áreas de especialidade" },
+  { value: "18+", label: "Anos de atuação" },
+  { value: "Multiplas", label: "Áreas de especialidade" },
   { value: "Zero", label: "Juridiquês" },
 ];
 
@@ -67,7 +65,7 @@ export default function About() {
             </p>
             <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold tracking-tighter leading-[1.05] text-slate-900">
               Uma advocacia
-              <span className="block" style={{ color: "#243588" }}>
+              <span className="block text-blue-900">
                 moderna para
               </span>
               empresas modernas.
@@ -108,29 +106,42 @@ export default function About() {
         </div>
 
         {/* Stats row */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.8 }}
-          className="mt-20 pt-12 border-t border-slate-100 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0"
-        >
-          {stats.map((stat, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="flex flex-col md:border-r border-slate-100 last:border-0 md:pl-8 first:pl-0 space-y-1"
-            >
-              <span className="text-4xl font-black text-slate-900 tracking-tight" style={{ color: "#243588" }}>
-                {stat.value}
-              </span>
-              <span className="text-sm text-slate-500 font-medium">{stat.label}</span>
-            </motion.div>
-          ))}
-        </motion.div>
+        <div className="mt-20">
+          <motion.h3
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-2xl md:text-3xl  font-semibold tracking-tight"
+          >
+            <span className="text-blue-900"> MR </span>em Números
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8 }}
+            className="mt-5 pt-12 border-t border-slate-100 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0"
+          >
+
+            {stats.map((stat, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="flex flex-col md:border-r border-slate-100 last:border-0 md:pl-8 first:pl-0 space-y-1"
+              >
+                <span className="text-4xl font-black text-slate-900 tracking-tight" style={{ color: "#243588" }}>
+                  {stat.value}
+                </span>
+                <span className="text-sm text-slate-500 font-medium">{stat.label}</span>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
   );

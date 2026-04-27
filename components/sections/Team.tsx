@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
 
 const partners = [
@@ -120,6 +121,7 @@ export default function Team() {
             </motion.div>
           ))}
         </div>
+        <Link href="/sobre" className="w-fit block mx-auto cursor-pointer px-5 py-3 md:px-6 md:py-4 bg-[#243588] text-sm md:text-md text-white rounded-sm">Conheça nossos valores</Link>
       </div>
     </section>
   );
