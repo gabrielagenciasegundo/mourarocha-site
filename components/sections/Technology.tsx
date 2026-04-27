@@ -110,7 +110,7 @@ export default function Technology() {
                 style={{ background: "radial-gradient(circle, rgba(36,53,136,0.08) 0%, transparent 70%)" }}
               ></div>
               <Image
-                src='/images/robo3.png'
+                src='/quem-somos-img-mouraRocha-05.jpg'
                 alt="Especialistas no digital"
                 width={400}
                 height={380}

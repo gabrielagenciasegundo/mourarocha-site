@@ -22,27 +22,29 @@ export default function About() {
     <section id="sobre" className="bg-white px-6 py-24 md:py-36 overflow-hidden">
       <div className="mx-auto max-w-[1400px]">
         {/* Two-column layout */}
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
-          {/* Left: image with accent */}
+        <div className="flex flex-wrap gap-12 lg:gap-20 items-center">
+          {/* Left: image */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="relative flex items-end justify-center lg:justify-start"
+            className="relative flex items-end justify-center lg:justify-start 
+    flex-1 basis-[calc(50%-1.5rem)] lg:basis-[calc(40%-2.5rem)] 
+    min-w-[300px] w-full"
           >
-            <div className="relative z-10 w-full max-w-sm lg:max-w-none">
+            <div className="relative z-10 lg:max-w-none w-auto">
               {/* Accent blob behind robot */}
               <div
                 className="absolute -top-10 -left-10 w-64 h-64 rounded-full opacity-10"
                 style={{ backgroundColor: "#243588", filter: "blur(60px)" }}
-              ></div>
+              > </div>
               <Image
-                src='/images/robo1.png'
+                src='/quem-somos-img-mouraRocha-04._cutjpg.jpg'
                 alt="Robô Moura Rocha"
-                width={400}
+                width={500}
                 height={480}
-                className="relative z-10 w-1/4 md:w-full max-h-[480px] object-contain drop-shadow-2xl"
+                className="relative w-full z-10 max-h-[580px] object-contain drop-shadow-2xl "
               />
             </div>
             {/* Floating badge */}
@@ -53,28 +55,30 @@ export default function About() {
           </motion.div>
 
           {/* Right: text content */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="space-y-6 lg:pt-4"
-          >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+            <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-100px" }}
+    transition={{ duration: 0.7, delay: 0.2 }}
+    className="space-y-6 lg:pt-4 
+    flex-1 basis-[calc(50%-1.5rem)] lg:basis-[calc(50%-2.5rem)] 
+    min-w-[320px] w-full"
+  >
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 w-full md:w-auto">
               // QUEM SOMOS
             </p>
             <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold tracking-tighter leading-[1.05] text-slate-900">
-              Uma advocacia
-              <span className="block text-blue-900">
-                moderna para
+              Uma advocacia {" "}
+              <span className="text-blue-900">
+                moderna para {" "}
               </span>
               empresas modernas.
             </h2>
 
-            <p className="text-md text-lg leading-tight md:leading-relaxed font-light max-w-lg text-slate-600">
+            <p className="text-md text-lg leading-tight md:leading-relaxed font-light max-w-xlg  text-slate-600">
               A Moura Rocha nasceu para quebrar o padrão da advocacia tradicional. Somos um escritório que fala a sua língua, entende a realidade de quem vive no digital e entrega soluções que acompanham tecnologia, velocidade e inovação.
             </p>
-            <p className="text-md text-lg leading-tight md:leading-relaxed font-light max-w-lg text-slate-600">
+            <p className="text-md text-lg leading-tight md:leading-relaxed font-light max-w-xlg  text-slate-600">
               Estamos aqui para dar suporte jurídico a quem constrói o futuro, garantindo que sua única preocupação seja o crescimento do seu negócio.
             </p>
 
@@ -82,7 +86,7 @@ export default function About() {
               {bullets.map((b, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <span
-                    className="mt-1 flex-shrink-0 h-5 w-5 rounded-full flex items-center justify-center text-white"
+                    className="mt-1 shrink-0 h-5 w-5 rounded-full flex items-center justify-center text-white"
                     style={{ backgroundColor: "#243588" }}
                   >
                     <Check className="h-3 w-3" strokeWidth={3} />
