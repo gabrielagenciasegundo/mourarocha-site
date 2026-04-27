@@ -31,44 +31,50 @@ export default function Hero() {
         }}
       ></div>
 
-      {/* Robot images — left and right panels */}
-      <div className="absolute inset-0 z-0 pointer-events-none select-none">
-  <div className="mx-auto flex h-full max-w-6xl items-end justify-between px-16">
-    {/* Left robot */}
-    <motion.div
-      initial={{ opacity: 0, x: -40, y: 20 }}
-      animate={{ opacity: 0.85, x: 0, y: 0 }}
-      transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-      className="hidden md:flex items-end"
-    >
-      <Image
-        src="/images/robo3.png"
-        alt=""
-        width={200}
-        height={500}
-        className="object-contain object-bottom drop-shadow-2xl"
-        priority
-      />
-    </motion.div>
+      {/* Abstract Tech Background */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        {/* Animated Glowing Orbs */}
+        <motion.div
+          animate={{
+            scale: [1, 1.1, 1],
+            opacity: [0.15, 0.3, 0.15],
+          }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute -top-[20%] -left-[10%] w-[50vw] h-[50vw] min-w-[500px] min-h-[500px] rounded-full bg-[#0c4ad1] mix-blend-screen filter blur-[100px]"
+        />
+        <motion.div
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.1, 0.25, 0.1],
+          }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+          className="absolute top-[30%] -right-[10%] w-[45vw] h-[45vw] min-w-[400px] min-h-[400px] rounded-full bg-[#0d3faf] mix-blend-screen filter blur-[120px]"
+        />
+        
+        {/* Minimalist Tech Grid */}
+        <div 
+          className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:4rem_4rem]"
+          style={{
+            maskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, #000 20%, transparent 100%)",
+            WebkitMaskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, #000 20%, transparent 100%)"
+          }}
+        />
 
-    {/* Right robot */}
-    <motion.div
-      initial={{ opacity: 0, x: 40, y: 20 }}
-      animate={{ opacity: 0.85, x: 0, y: 0 }}
-      transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-      className="hidden md:flex items-end"
-    >
-      <Image
-        src="/images/robo2.png"
-        alt=""
-        width={180}
-        height={460}
-        className="object-contain object-bottom drop-shadow-2xl"
-        priority
-      />
-    </motion.div>
-  </div>
-</div>
+        {/* Floating tech nodes/lines to give a subtle network effect */}
+        <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dotPattern" x="0" y="0" width="64" height="64" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.5" />
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#dotPattern)" 
+                style={{
+                  maskImage: "radial-gradient(ellipse 60% 60% at 50% 50%, #000 10%, transparent 100%)",
+                  WebkitMaskImage: "radial-gradient(ellipse 60% 60% at 50% 50%, #000 10%, transparent 100%)"
+                }}
+          />
+        </svg>
+      </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl px-6 flex flex-col items-center gap-8">

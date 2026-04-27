@@ -35,7 +35,7 @@ export default async function SolucaoPage({ params }: Props) {
       <Navbar />
       <main>
         <PageHero
-          eyebrow={solucao.eyebrow}
+          // eyebrow={solucao.eyebrow}
           titleLight={solucao.title.split(" ").slice(0, -1).join(" ")}
           titleBold={solucao.title.split(" ").slice(-1).join(" ")}
           subtitle={solucao.subtitle}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 interface PageHeroProps {
-  eyebrow: string;
+  eyebrow?: string;
   titleLight: string;
   titleBold: string;
   subtitle?: string;

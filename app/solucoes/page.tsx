@@ -17,7 +17,7 @@ export default function SolucoesPage() {
       <Navbar />
       <main>
         <PageHero
-          eyebrow="// SOLUÇÕES"
+          // eyebrow="// SOLUÇÕES"
           titleLight="Saiba mais sobre"
           titleBold="nossas especialidades."
           subtitle="Do registro de marca à estrutura societária, atuamos em todas as frentes jurídicas que importam para o seu negócio."
